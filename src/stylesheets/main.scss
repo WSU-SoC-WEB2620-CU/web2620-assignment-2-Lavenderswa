@@ -1,1 +1,253 @@
 // Your styles go here
+:root {                                             
+    box-sizing: border-box;                           
+  }                                                   
+                                                       
+  *,                                                  
+  ::before,
+  ::after {
+    box-sizing: inherit;
+    font-size:16px;
+  }
+  
+  body {
+    background-color: white;
+  }
+  
+  body * + * {
+    margin: 1.5em;
+  }
+
+ .container {                                        
+    max-width: 1080px;                                
+    margin: 0 auto;      
+  }  
+
+
+
+
+
+
+
+
+
+
+
+
+/* everything LARGER than 800px, COMPUTER */ 
+@media (min-width: 801px) {
+main {
+    background-color:purple;
+}
+}
+
+
+/* everything BETWEEN 500px(nolesserthan500) - 800px(nogreaterthan800), TABLET */
+@media only screen and (min-width:501px) and (max-width:800px) {
+    main {
+        background-color: blue;
+    }
+}
+
+
+/* everything SMALLER than 500px, PHONE */
+@media (max-width:500px) {
+
+
+    
+#topboxparent {
+    list-style-type:none;
+    margin:0 0 25px 0;
+        padding:0;
+        height:29px;
+}
+
+    #topbox {
+    background-color:aqua;
+    color:aqua;
+    list-style-type:none;
+        padding:1em;
+        display:flex;
+        flex:100%;
+        flex-direction:column;
+    }
+    
+    /*#thirdboxmaincolparent {
+    
+    }
+    
+    #thirdboxmaincol {
+
+    }
+    */
+    
+    .flexboxparent {
+    display:flex;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    padding-left:0;
+    list-style-type:none;
+    flex-direction: column;
+    margin:0;
+    }
+    .flexboxparent li {
+            list-style-type:none;
+            padding:.1em;
+            background-color:black;
+            flex-direction:column;
+            flex:2;
+            margin-top:.5rem;
+            margin-bottom:.5rem;
+          
+
+        }
+    .flexboxparent li + li {
+        margin-top:0px;
+        margin-left:0px;
+        margin-right:0px;
+    }
+        
+    
+        
+}
+
+
+
+
+
+
+/*
+flex-direction - initial value = row (left to right), direction:column changes that (top to bottom), also reverse for both does exactly that. 
+flex-wrap - if flex items will wrap on to a new row in flex container, or stay in one row
+flex-flow - shorthand for <flex-direction> <flex wrap>
+
+justify-content - controls how items are positioned along the main axis (left to right usually)
+align-items - controls how items are positioned along cross axis (top to bottom usually)
+align-content - if flex-wrap is enabled, controls spacing of flex rows along cross axis (otherwise ignored) 
+
+order - an integer that moves a flex item to specific position among its siblings, disregarding source order. 
+
+flex-grow - affects whether or not item will grow past basis. 0=won't, any other number will be yes by that number, takes up a higher amount of the remainder unused space 
+flex-shrink - combats overflow, 0=won't shrink; #>0 will. 
+flex-basis - starting point / size 0%, can be changed to 20% etc. 
+flex - grow, shrink, basis ... just use this instead of individuals. Can be none,1,50%, etc. 
+align-self - controls how the item is aligned on cross axis (overrides container's align-items value for specific items). Ignored if auto margin is set on cross axis 
+
+height of a flexbox container is determined by it's elements / flex items
+/////
+
+usually, begin flexbox with these:
+- Identify a container and its items and use display:flex on container
+- If necessary, set flex-direction on container 
+- Declare margins and/or flex values for flex items where necessary to control their size 
+
+
+*/ 
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.site-nav {
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    display:flex;
+    padding-left:0;
+    list-style-type:none;
+    background-color:orange;
+    border-radius:.2em;
+}
+
+.site-nav > li {
+    margin-top:0;
+}
+
+.site-nav > li > a {
+    display:block;
+    padding:.5em 1em;
+    background-color:darkorange;
+    color:white;
+    text-decoration:none;
+}
+
+.site-nav > li + li ( follows every li that follows another li,
+besides the first )  {
+    margin-left: 1.5em;
+}
+
+.site-nav > .nav-right {
+  margin-left: auto;                
+}
+
+.tile {                         
+    padding: 1.5em;               
+    background-color: #fff;       
+  }                               
+  
+  .flex {                         
+    display: flex;                
+  }                               
+  
+  .flex > * + * {                 
+    margin-top: 0;                
+    margin-left: 1.5em;           
+  }               
+
+.column-main {
+  flex: 2;
+}
+
+.column-sidebar {
+  flex: 1;
+  display:flex;
+  flex-direction:column;
+}
+
+.column-sidebar > .tile {
+    flex:1;
+}
+
+.login-form h3 {                                                  
+  margin: 0;                                                      
+  font-size: .9em;                                                
+  font-weight: bold;                                              
+  text-align: right;                                              
+  text-transform: uppercase;                                      
+}                                                                 
+
+.login-form input:not([type=checkbox]):not([type=radio]) {        
+  display: block;
+  width: 100%;
+  margin-top: 0;
+}
+
+.login-form button {                                             
+  margin-top: 1em;                                                
+  border: 1px solid #cc6b5a;                                      
+  background-color: white;                                        
+  padding: .5em 1em;                                              
+  cursor:pointer;                                                
+}             
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
